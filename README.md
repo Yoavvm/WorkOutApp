@@ -21,14 +21,4 @@ an admin will have the possibility to copy a plan and store it as a new plan for
 I also want to create a DB consisting of common foods and exercises so the admin will have the ability to select while creating a plan rather than create everything from scratch everytime.
 
 
-    exercise DB -
-        exercise name (examples are "pushup" or "pullup")
-        relevant to what body part (examples are "upper arms" or "legs")
-        link to a YT video showing the exercise
-
-    food DB - 
-        food name (examples are "eggs" or "cucumbers")    
-        nutritional values (calories, protein..)
-        ?amount per serving?
-        
-        
+    
