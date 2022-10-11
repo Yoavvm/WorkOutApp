@@ -2,12 +2,21 @@ const repo = require('./repo')
 
 const getAll = async () => {
 
-    const allUsers = await repo.getAll();
-    return allUsers;
+    const allExercises = await repo.getAll();
+    return allExercises;
+}
+
+const createExercise = async (newExercise) => {
+
+    await repo.createExercise(newExercise);
+    
+    const allExercises = await repo.getAll();
+    return allExercises;
 }
 
 
 module.exports = {
-    getAll
+    getAll,
+    createExercise
 
 }

@@ -5,7 +5,14 @@ const getAll = async () => {
     return allExercises;
 }
 
+const createExercise = async (newExercise) => {
+    const savedExercise = await Exercise.create(newExercise);
+    savedExercise.save();
+    return newExercise;
+}
+
 
 module.exports = {
-    getAll
+    getAll,
+    createExercise
 }

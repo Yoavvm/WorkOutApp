@@ -20,22 +20,17 @@ const userSchema = new Schema ({
 })
 
 const exerciseSchema = new Schema ({
-    userName: {
+    exerciseName: {
         type: String,
         unique: true,
         required: true,
-        minLength: 4
+        minLength: 2
     },
-    email: {
+    videoUrl: {
         type: String,
-        unique: true,
-        required: true
-    },
-    encryptedPassword: {
-        type: String,
-        required: true
-    }
-
+        required: true,
+        minLength: 2
+    }, 
 })
 
 const User = model('user', userSchema);
